@@ -1,16 +1,33 @@
 .gallery-events-box {
     max-width: 800px;
-    padding: 20px;
     margin: 1rem auto;
     border: 1px solid #ddd;
     border-radius: 10px;
-    padding: 20px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: black;
+    overflow: hidden;
 }
 
 .gallery-event-container {
-    padding: 0;
+    position: relative;
+    height: 200px; /* Set a fixed height for the container */
+    display: flex; /* Enable flexbox */
+    justify-content: center; /* Centers the content horizontally */
+    align-items: center; /* Centers the content vertically */
+}
+
+.background-img {
+    position: absolute; /* Makes it stay behind the text */
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/gallery/turbo/1.jpg'); /* Your background image */
+    background-size: cover;
+    background-position: center;
+    opacity: 0.7;
+    transition: 0.2s ease; /* Smooth transition */
+}
+
+.background-img:hover {
+    opacity: 1;
 }
 
 .gallery-container {
@@ -20,6 +37,11 @@
     margin: 0 auto;
 }
 
-.gallery-container img{
+.gallery-container img {
     width: 100%;
 }
+
+#imgturbo { background-image: url('../images/gallery/turbo/1.jpg'); }
+#imgbrasserie { background-image: url('../images/gallery/brasserie/1.jpg'); }
+#imgwaverly { background-image: url('../images/gallery/waverly/1.jpg'); }
+#imgnouvel { background-image: url('../images/gallery/nouvel/1.jpg'); }
