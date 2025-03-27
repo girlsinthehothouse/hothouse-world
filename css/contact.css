@@ -5,6 +5,7 @@
 
 .contact-info a{
     font-weight: 500;
+    transition: 0.2s ease;
 }
 
 .contact-info a:hover{
