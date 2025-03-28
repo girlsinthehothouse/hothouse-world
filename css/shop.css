@@ -58,6 +58,10 @@
 .secret-link:hover {
     opacity: 0.1;
 }
+
+.secret-link h4 {
+    cursor: pointer;
+  }
   
 #item1 { background-image: url('../images/shop/dildo-default.jpg'); }
 #item2 { background-image: url('../images/shop/rosary-default.jpg'); }
