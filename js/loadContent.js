@@ -11,12 +11,12 @@ function loadHead(title) {
         document.head.innerHTML = data;  // Insert the template into the head
         
         // Dynamically set the page title
-        document.title = title; 
+        document.title = `${title} | HOT HOUSE`; 
   
         // Dynamically set the og:title meta content
         const ogTitleMetaTag = document.querySelector('meta[property="og:title"]');
         if (ogTitleMetaTag) {
-          ogTitleMetaTag.setAttribute('content', title); // Set the og:title content
+          ogTitleMetaTag.setAttribute('content', `${title} - HOT HOUSE WORLD`); // Set the og:title content
         }
       })
       .catch(error => console.error('Error loading head template:', error));
