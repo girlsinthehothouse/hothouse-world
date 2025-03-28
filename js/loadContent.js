@@ -8,8 +8,15 @@ function loadHead(title) {
     fetch('/includes/head.html')
       .then(response => response.text())
       .then(data => {
-        document.head.innerHTML = data;  // Insert the template into the head
-        
+        // Create a temporary div to hold the fetched HTML
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = data;
+
+        // Append each element in the fetched head content to the document head
+        const headElements = tempDiv.querySelectorAll('*');
+        headElements.forEach(element => {
+          document.head.appendChild(element);
+        });
         // Dynamically set the page title
         document.title = `${title} | HOT HOUSE`; 
   
