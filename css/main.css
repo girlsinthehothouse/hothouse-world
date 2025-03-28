@@ -99,6 +99,11 @@ a h4 {
   cursor: pointer;
 }
 
+main {
+  margin: 0;
+  position: relative;
+}
+
 aside {
   display: flex;
   justify-content: center;
