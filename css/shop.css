@@ -50,6 +50,14 @@
 .product-text {
     margin-bottom: 24px;
 }
+
+.secret-link {
+    transition: 0.2s ease;
+}
+
+.secret-link:hover {
+    opacity: 0.1;
+}
   
 #item1 { background-image: url('../images/shop/dildo-default.jpg'); }
 #item2 { background-image: url('../images/shop/rosary-default.jpg'); }
