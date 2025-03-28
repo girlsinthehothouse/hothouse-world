@@ -37,6 +37,7 @@
   
 .shop-photo, .item-photo{
     background-size: cover;
+    background-color: white;
     width: 350px;
     height: 350px;
     margin: 0 auto;
