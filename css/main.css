@@ -80,6 +80,7 @@ a {
   display: inline block;
   color: white;
   cursor: pointer;
+  z-index: 100;
 }
 
 a:visited {
