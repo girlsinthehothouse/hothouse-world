@@ -23,7 +23,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-header {
+nav {
   margin-left: auto;
   margin-right: auto;
   position: relative;
@@ -37,6 +37,12 @@ h1 {
 
 /* PAGE TITLE */
 h2 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+
+.page-title {
   font-size: 2.25rem;
   font-weight: 500;
   margin-bottom: 1rem;
@@ -87,10 +93,17 @@ a {
 a:visited {
   color: white;
 }
-
+/* 
 main {
   margin: 0;
   position: relative;
+} */
+
+aside {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1rem;
 }
 
 
@@ -119,13 +132,6 @@ main {
 .instagram-button:hover,
 .softlab-button:hover {
   transform: scale(1.1);
-}
-
-.hotvid-row {
-  display: flex;
-  justify-content: center;
-  gap: 0.6rem;
-  padding: 1rem;
 }
 
 .hotvid-gif {
