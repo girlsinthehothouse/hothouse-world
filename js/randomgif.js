@@ -34,27 +34,4 @@ function setRandomGif(container) {
     }
 }
 
-function updateLayoutForScreenWidth() {
-    const screenWidth = window.innerWidth;
-
-    if (screenWidth <= 650) {
-        hotvidContainers.forEach(container => {
-            const element = document.getElementById(container.id);
-            element.style.width = '200px';
-            element.style.height = '167px';
-        });
-    } else {
-        // Change positioning for larger screens
-        hotvidContainers.forEach(container => {
-            const element = document.getElementById(container.id);
-            element.style.width = '300px';
-            element.style.height = '250px';
-        });
-    }
-}
-
 hotvidContainers.forEach(container => setRandomGif(container));
-
-window.addEventListener('resize', updateLayoutForScreenWidth);
-
-updateLayoutForScreenWidth();

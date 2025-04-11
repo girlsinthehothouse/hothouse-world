@@ -175,9 +175,21 @@ footer {
   margin: 4rem;
 }
 
+@media only screen and (max-width: 1200px) {
+  .hotvid-gif {
+    width: 300px;
+    height: 250px;
+  }
+}
+
 @media only screen and (max-width: 650px) {
   :root {
     font-size: 10px;
+  }
+
+  .hotvid-gif {
+    width: 200px;
+    height: 167px;
   }
 }
 
